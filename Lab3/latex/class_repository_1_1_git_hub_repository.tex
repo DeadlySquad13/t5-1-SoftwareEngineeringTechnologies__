@@ -1,0 +1,126 @@
+\doxysection{Repository.\+Git\+Hub\+Repository Class Reference}
+\hypertarget{class_repository_1_1_git_hub_repository}{}\label{class_repository_1_1_git_hub_repository}\index{Repository.GitHubRepository@{Repository.GitHubRepository}}
+
+
+Отвечает за обработку репозитория Git\+Hub.  
+
+
+Inheritance diagram for Repository.\+Git\+Hub\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_repository_1_1_git_hub_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_repository_1_1_git_hub_repository_ae98843939720c70328bbcd331a5c7d5f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, owner, url)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Git\+Hub\+Repository. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_repository_1_1_git_hub_repository_a0fe1b5b637bd5b511e47d99a087acfa1}{change\+Issues}} (self, issues)
+\begin{DoxyCompactList}\small\item\em Изменение issues для данного репозитория \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_repository_1_1_git_hub_repository_a9c4569a414a283b8ee1be743416bea48}{add\+Issue}} (self, issue)
+\begin{DoxyCompactList}\small\item\em Пример использования add\+Issue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_repository_1_1_repository}{Repository.\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_repository_1_1_repository_afd67488804ae687d655c05e435f32d5b}{change\+Url}} (self, url)
+\begin{DoxyCompactList}\small\item\em Изменить ссылку репозитория \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_repository_1_1_repository_a24f58f260de29eeb7269c7bc79d531db}{change\+Owner}} (self, owner)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_repository_1_1_git_hub_repository_ae38f63869bee28f95810ea8fd65be232}\label{class_repository_1_1_git_hub_repository_ae38f63869bee28f95810ea8fd65be232} 
+{\bfseries \+\_\+issues}
+\begin{DoxyCompactList}\small\item\em Ссылки на обсуждения Git\+Hub. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_repository_1_1_repository}{Repository.\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+owner}
+\begin{DoxyCompactList}\small\item\em Владелец репозитория \end{DoxyCompactList}\item 
+{\bfseries \+\_\+url}
+\begin{DoxyCompactList}\small\item\em Ссылка на репозиторий \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Отвечает за обработку репозитория Git\+Hub. 
+
+Позволяет манипулировать основными данными о репозитории Git\+Hub. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_repository_1_1_git_hub_repository_ae98843939720c70328bbcd331a5c7d5f}\label{class_repository_1_1_git_hub_repository_ae98843939720c70328bbcd331a5c7d5f} 
+\index{Repository.GitHubRepository@{Repository.GitHubRepository}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Repository.GitHubRepository@{Repository.GitHubRepository}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily Repository.\+Git\+Hub\+Repository.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{owner,  }\item[{}]{url }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Git\+Hub\+Repository. 
+
+Требует основные данные о проекте
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & -\/ Ошибка при создании Git\+Hub репозитория. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+класс Git\+Hub\+Repository 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_repository_1_1_repository_a1ce45998464cdda7b7f22e17e8d76f90}{Repository.\+Repository}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_repository_1_1_git_hub_repository_a9c4569a414a283b8ee1be743416bea48}\label{class_repository_1_1_git_hub_repository_a9c4569a414a283b8ee1be743416bea48} 
+\index{Repository.GitHubRepository@{Repository.GitHubRepository}!addIssue@{addIssue}}
+\index{addIssue@{addIssue}!Repository.GitHubRepository@{Repository.GitHubRepository}}
+\doxysubsubsection{\texorpdfstring{addIssue()}{addIssue()}}
+{\footnotesize\ttfamily Repository.\+Git\+Hub\+Repository.\+add\+Issue (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{issue }\end{DoxyParamCaption})}
+
+
+
+Пример использования add\+Issue. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{gitHubRepository\ =\ \mbox{\hyperlink{namespace_git_hub_repository}{GitHubRepository}}()}
+\DoxyCodeLine{gitHubRepository.addIssue(issue)}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Issue\+Exception} & -\/ Такого обсуждения не существует.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+итоговый набор issue 
+\end{DoxyReturn}
+\Hypertarget{class_repository_1_1_git_hub_repository_a0fe1b5b637bd5b511e47d99a087acfa1}\label{class_repository_1_1_git_hub_repository_a0fe1b5b637bd5b511e47d99a087acfa1} 
+\index{Repository.GitHubRepository@{Repository.GitHubRepository}!changeIssues@{changeIssues}}
+\index{changeIssues@{changeIssues}!Repository.GitHubRepository@{Repository.GitHubRepository}}
+\doxysubsubsection{\texorpdfstring{changeIssues()}{changeIssues()}}
+{\footnotesize\ttfamily Repository.\+Git\+Hub\+Repository.\+change\+Issues (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{issues }\end{DoxyParamCaption})}
+
+
+
+Изменение issues для данного репозитория 
+
+Позволяет изменить набор issue -\/ предложений или обсуждений багов и потенциальных улучшений проекта. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Issue\+Exception} & -\/ Такого обсуждения не существует.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+итоговый набор issue 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_repository_8py}{Repository.\+py}}\end{DoxyCompactItemize}

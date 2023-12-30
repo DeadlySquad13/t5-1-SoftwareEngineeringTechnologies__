@@ -1,0 +1,112 @@
+\doxysection{Repository.\+Repository Class Reference}
+\hypertarget{class_repository_1_1_repository}{}\label{class_repository_1_1_repository}\index{Repository.Repository@{Repository.Repository}}
+
+
+Отвечает за обработку репозитория.  
+
+
+Inheritance diagram for Repository.\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_repository_1_1_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_repository_1_1_repository_a1ce45998464cdda7b7f22e17e8d76f90}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, owner, url)
+\begin{DoxyCompactList}\small\item\em Конструктор класса Repository. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_repository_1_1_repository_afd67488804ae687d655c05e435f32d5b}{change\+Url}} (self, url)
+\begin{DoxyCompactList}\small\item\em Изменить ссылку репозитория \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_repository_1_1_repository_a24f58f260de29eeb7269c7bc79d531db}{change\+Owner}} (self, owner)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_repository_1_1_repository_a2dc510e73138e6fa7035a86e8a155290}\label{class_repository_1_1_repository_a2dc510e73138e6fa7035a86e8a155290} 
+{\bfseries \+\_\+owner}
+\begin{DoxyCompactList}\small\item\em Владелец репозитория \end{DoxyCompactList}\item 
+\Hypertarget{class_repository_1_1_repository_ae9d11ada054fb7b9e6f4db29c16cbc11}\label{class_repository_1_1_repository_ae9d11ada054fb7b9e6f4db29c16cbc11} 
+{\bfseries \+\_\+url}
+\begin{DoxyCompactList}\small\item\em Ссылка на репозиторий \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Отвечает за обработку репозитория. 
+
+Позволяет манипулировать основными данными о репозитории. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_repository_1_1_repository_a1ce45998464cdda7b7f22e17e8d76f90}\label{class_repository_1_1_repository_a1ce45998464cdda7b7f22e17e8d76f90} 
+\index{Repository.Repository@{Repository.Repository}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Repository.Repository@{Repository.Repository}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily Repository.\+Repository.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{owner,  }\item[{}]{url }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса Repository. 
+
+Требует основные данные о проекте
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & Владелец репозитория \\
+\hline
+{\em url} & Ссылка на репозиторий \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+класс Repository 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_repository_1_1_git_hub_repository_ae98843939720c70328bbcd331a5c7d5f}{Repository.\+Git\+Hub\+Repository}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_repository_1_1_repository_a24f58f260de29eeb7269c7bc79d531db}\label{class_repository_1_1_repository_a24f58f260de29eeb7269c7bc79d531db} 
+\index{Repository.Repository@{Repository.Repository}!changeOwner@{changeOwner}}
+\index{changeOwner@{changeOwner}!Repository.Repository@{Repository.Repository}}
+\doxysubsubsection{\texorpdfstring{changeOwner()}{changeOwner()}}
+{\footnotesize\ttfamily Repository.\+Repository.\+change\+Owner (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{owner }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & Владелец репозитория Изменить владельца репозитория\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em User\+Exception} & -\/ Такого пользователя не существует. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+изменённый пользователь -\/ новый владелец репозитория 
+\end{DoxyReturn}
+\Hypertarget{class_repository_1_1_repository_afd67488804ae687d655c05e435f32d5b}\label{class_repository_1_1_repository_afd67488804ae687d655c05e435f32d5b} 
+\index{Repository.Repository@{Repository.Repository}!changeUrl@{changeUrl}}
+\index{changeUrl@{changeUrl}!Repository.Repository@{Repository.Repository}}
+\doxysubsubsection{\texorpdfstring{changeUrl()}{changeUrl()}}
+{\footnotesize\ttfamily Repository.\+Repository.\+change\+Url (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url }\end{DoxyParamCaption})}
+
+
+
+Изменить ссылку репозитория 
+
+Изменить поле url у соответствующего репозитория. Влияет на отображение в хостинге.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & Ссылка на репозиторий \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+изменённая ссылка -\/ новая ссылка на данный репозиторий 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_repository_8py}{Repository.\+py}}\end{DoxyCompactItemize}

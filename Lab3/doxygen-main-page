@@ -1,0 +1,14 @@
+"""!
+@mainpage Библиотека по анализу GitHub репозиториев
+
+Содержит вспомогательные утилиты для анализа репозиториев с целью выставления объективной оценки.
+@author Пакало А.С. ИУ5-12М
+
+\par Основные используемые классы
+- @ref Repository.Repository
+- @ref Repository.GitHubRepository
+
+\par Основные используемые файлы
+- @ref Repository.py
+- @ref GitHubRepository.py
+"""
